@@ -1,0 +1,283 @@
+body, h1, h2, h3,h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+    color:black;
+    
+}
+
+.sidebar {
+    width: 120px;
+    background: #222;
+    position: fixed;
+    height: 100%;
+    padding-top: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+.sidebar a {
+    color: #f8f9fa;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    transition: background 0.3s;
+}
+.sidebar a:hover, .sidebar a.active {
+    background: #575757;
+}
+.sidebar .profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+.content {
+    margin-left: 140px;
+    padding: 20px;
+}
+header {
+    
+    background-size: cover;
+    color: #f8f9fa;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    opacity: 0.9;
+    overflow: hidden;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 90, 0.4);
+    filter: blur(2px);
+}
+header h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+header p {
+    font-size: 1.2rem;
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
+section {
+    margin-top: 20px;
+    padding: 40px;
+    background:whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(0);
+    opacity: 1;
+}
+section:hover {
+    transform: translateY(-10px);
+}
+.skill-category, .education-category {
+    margin-bottom: 20px;
+}
+.skill-item, .education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.skill-item img, .education-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.skill-item .progress {
+    width: 100%;
+    margin: 0;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.skill-item .progress-bar {
+    background-color: #4CAF50;
+    text-align: right;
+    padding-right: 5px;
+    border-radius: 10px;
+}
+.contact-form {
+    background: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-form input, .contact-form textarea {
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.contact-form button {
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+}
+footer {
+    border-radius: 10px;
+    background: black;
+    color: #777;
+    padding: 20px 0;
+    text-align: center;
+}
+footer a {
+    color: #4CAF50;
+}
+.card-header {
+    background: #333;
+}
+.card-body {
+    background: #222;
+    color: #f8f9fa;
+}
+.card img {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+.card img:hover {
+    opacity: 1;
+}
+.row.text-center .col-sm-3 {
+    background: #1c1c1c;
+    margin: 5px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.btn-outline-light {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-outline-light:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    padding: 10px;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+.carousel-item .skill-item {
+    margin: 10px;
+    flex: 1 0 30%;
+    max-width: 30%;
+}
+
+.hire-me-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0073b1; /* LinkedIn blue */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hire-me-button:hover {
+    background-color: #005582;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hire-me-button:active {
+    background-color: #003f5e;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#sd{
+    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(0);
+    
+
+}
+
+
+#sd:hover{
+    transform: translateY(-10px);
+        transform: scale(1.05);
+
+}
+    
+#sb{
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateX(0);
+}
+#sb:hover{
+    transform: translateX(-10px);
+}
+#sc{
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateY(0);
+}
+#sc:hover{
+    transform: translateY(-10px);
+}
+
+.container-fluid {
+    background-image: url(photos/black-acrylic-texture-wallpaper.jpg);
+    
+    
+    padding-left: 5rem;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #343a40;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.display-1, .lead {
+    background-color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.display-1 {
+    font-size: 5rem;
+    animation: typing 4s steps(30, end) forwards;
+}
+.lead {
+    font-size: 2rem;
+    visibility: hidden;
+    animation: typing2 4s steps(20, end) 4s forwards, show 0s forwards 4s;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes typing2 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes show {
+    to { visibility: visible; }
+}
